@@ -47,7 +47,7 @@ public class Lab1Task2 {
   }
 
   private void printset(HashSet<Character> set) {
-    System.out.println("Set: " + set + "\n size of set: " + set.size());
+    System.out.println("Set: " + set + "\nSize of set: " + set.size());
     return;
   }
 }

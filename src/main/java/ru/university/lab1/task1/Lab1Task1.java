@@ -39,6 +39,6 @@ public class Lab1Task1 {
   }
 
   private void printset(Set<Character> set) {
-    System.out.println("Set: " + set + "\n Number of elements in set: " + set.size());
+    System.out.println("Set: " + set + "\nNumber of elements in set: " + set.size());
   }
 }
