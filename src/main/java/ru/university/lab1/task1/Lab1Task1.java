@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Lab1Task1 {
-  public void start() {
+  public void start(Scanner scanner) {
     final Set<Character> TARGET_CHARS = Set.of('№', '!', '»', ';', ',', '.', '%', ':', '?', '@', '#', '$', '^', '&',
         '*',
         '(', ')');
@@ -15,12 +15,10 @@ public class Lab1Task1 {
     System.out.println("Enter your string: ");
 
     String userInput;
-    Scanner scanner = new Scanner(System.in);
     if (scanner.hasNextLine()) {
       userInput = scanner.nextLine();
     } else {
       System.out.println("Input stream closed. Exiting...");
-      scanner.close();
       return;
     }
     if (userInput.equals("")) {
@@ -38,7 +36,6 @@ public class Lab1Task1 {
       System.out.println("There is nothing suspicious in your string...");
     }
 
-    scanner.close();
   }
 
   private void printset(Set<Character> set) {
