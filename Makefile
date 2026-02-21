@@ -1,6 +1,6 @@
 .PHONY: run
 run:
-	mvn compile exec:java -Dexec.mainClass="ru.university.App" -q
+	mvn compile exec:java -Dexec.mainClass="ru.university.App" -Dexec.args="$(LAB) $(TASK)" -q
 
 .PHONY: run-clean
 run-clean:
