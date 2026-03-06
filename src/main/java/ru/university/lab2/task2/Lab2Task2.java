@@ -12,8 +12,8 @@ public class Lab2Task2 {
   public void start(Scanner scanner) {
     System.out.println("--- Лабораторная работа 2. Задача 2 ---");
 
-    File f1 = new File("f1.txt");
-    File f2 = new File("f2.txt");
+    File f1 = new File("resources/lab2task2/f1.txt");
+    File f2 = new File("resources/lab2task2/f2.txt");
 
     System.out.println(
         "Сгенерировать случайные данные для файла f1? (y - да, любая другая клавиша - нет, использовать существующий)");
