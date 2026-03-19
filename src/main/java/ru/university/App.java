@@ -6,6 +6,7 @@ import ru.university.lab1.task1.Lab1Task1;
 import ru.university.lab1.task2.Lab1Task2;
 import ru.university.lab2.task1.Lab2Task1;
 import ru.university.lab2.task2.Lab2Task2;
+import ru.university.lab3.Lab3;
 
 /**
  * Hello world!
@@ -18,6 +19,7 @@ public class App {
       System.out.println("Before we start, what lab is it? (choose a number):");
       System.out.println("1. Sets");
       System.out.println("2. Files");
+      System.out.println("3. Pointers");
 
       if (!scanner.hasNextLine())
         return;
@@ -80,6 +82,8 @@ public class App {
           Lab2Task2 lab2Task2 = new Lab2Task2();
           lab2Task2.start(scanner);
         }
+      } else if (labChoice == 3) {
+        Lab3.start(scanner);
       }
 
     } else {
