@@ -209,7 +209,7 @@ public class Lab3 {
     System.out.println();
 
     Pointer<Double> maxPtr = Pointer.NewPointer(Double.class);
-    Pointer.SetPointer(maxPtr, arr[0]); // копируем первый элемент
+    Pointer.SetPointer(maxPtr, arr[0]);
 
     for (int i = 1; i < n; i++) {
       Double curr = Pointer.ReadPointer(arr[i]);
